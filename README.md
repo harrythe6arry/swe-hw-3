@@ -13,6 +13,8 @@ This project aims to deliver clean, well-tested, and maintainable code. It inclu
   git clone
 ```
 
+## Badges
+
 
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=harrythe6arry_swe-hw-3&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=harrythe6arry_swe-hw-3)
 ![action status](https://github.com/harrythe6arry/swe-hw-3/actions/workflows/python.yml/badge.svg?branch=main)

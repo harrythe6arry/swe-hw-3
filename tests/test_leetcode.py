@@ -1,6 +1,6 @@
 import pytest
 
-from leetcode import fibonacci, is_palindrome
+from leetcode.leetcode import fibonacci, is_palindrome
 
 
 @pytest.mark.parametrize(
