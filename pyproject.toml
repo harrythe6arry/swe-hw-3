@@ -1,12 +1,10 @@
-[project]
+[tool.poetry]
 name = "swe-hw-3"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "harrythe6arry",email = "voravit.sri@student.mahidol.edu"}
-]
+authors = ["harrythe6arry <voravit.sri@student.mahidol.edu>"]
 readme = "README.md"
-requires-python = ">=3.9"
+
 
 
 [tool.poetry.dependencies]

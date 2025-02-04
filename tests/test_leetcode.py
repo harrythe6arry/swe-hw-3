@@ -1,6 +1,6 @@
 import pytest
 
-from src.leetcode.main import fibonacci, is_palindrome
+from leetcode import fibonacci, is_palindrome
 
 
 @pytest.mark.parametrize(
@@ -22,8 +22,18 @@ def test_fibonacci_valid():
     assert fibonacci(1) == 1
     assert fibonacci(5) == 5
     assert fibonacci(10) == 55
+    assert fibonacci(20) == 6765
 
 
 def test_fibonacci_invalid():
+    with pytest.raises(ValueError):
+        fibonacci(-1)
+
+
+def test_empty_string():
+    assert is_palindrome("") == True
+
+
+def test_negative_number_fib():
     with pytest.raises(ValueError):
         fibonacci(-1)
