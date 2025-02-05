@@ -1,6 +1,14 @@
 def is_palindrome(s: str) -> bool:
-    s = "".join(filter(str.isalnum, s)).lower()
-    return s == s[::-1]
+    cleaned_str = clean_string(s)
+    return cleaned_str == reverse_string(cleaned_str)
+
+
+def clean_string(s: str) -> str:
+    return "".join(c.lower() for c in s if c.isalnum())
+
+
+def reverse_string(s: str) -> str:
+    return s[::-1]
 
 
 def fibonacci(n: int) -> int:

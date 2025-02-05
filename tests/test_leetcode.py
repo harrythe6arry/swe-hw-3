@@ -1,6 +1,6 @@
 import pytest
 
-from leetcode.leetcode import fibonacci, is_palindrome
+from leetcode.leetcode import clean_string, fibonacci, is_palindrome, reverse_string
 
 
 @pytest.mark.parametrize(
@@ -23,6 +23,21 @@ def test_fibonacci_valid():
     assert fibonacci(5) == 5
     assert fibonacci(10) == 55
     assert fibonacci(20) == 6765
+
+
+def test_reverse_string():
+    assert reverse_string("hello") == "olleh"
+    assert reverse_string("racecar") == "racecar"
+    assert reverse_string("12321") == "12321"
+
+
+def test_clean_string():
+    assert (
+        clean_string("asdfj dlsa;kf jds sdlkaf jas;ldfj ")
+        == "asdfjdlsakfjdssdlkafjasldfj"
+    )
+    assert clean_string("racecar") == "racecar"
+    assert clean_string("12321") == "12321"
 
 
 def test_fibonacci_invalid():
